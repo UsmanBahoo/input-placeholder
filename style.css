@@ -1,0 +1,41 @@
+input::placeholder {
+    text-align: center;
+}
+*{
+    box-sizing:border-box;
+    margin:0px;
+    padding:0px;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    background-color:#fff;
+    font-family:"poppins , sans-serif";
+    margin-top:200px ;
+   
+}
+.wrapper{
+    position:relative;
+}
+.name-input{
+    padding:0.6rem 1.2rem;
+    color:#444;
+    font-size:1.5rem;
+}
+.name-label{
+        position: absolute;
+        top: 0.6rem;
+        left: 1.2rem;
+        color: rgba(0, 0, 0, 0.5); 
+        font-size: 1.5rem;
+        transition: 0.4s all;
+        padding-inline:0.25rem;
+}
+        .name-input:focus~.name-label,
+        .name-input:valid~.name-label {
+        top: -0.5rem;
+        left: 0.5rem;
+        background-color:#fff;
+        font-size:1ren;
+}
